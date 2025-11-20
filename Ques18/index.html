@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML Image Map Example</title>
+</head>
+<body>
+
+    <h1>Clickable Regions on the Image Below</h1>
+    
+    <img src="Photo.png" alt="A map of different regions" usemap="#imagemap" width="600" height="400">
+    
+    <map name="imagemap">
+        
+        <area shape="circle" coords="100,100,50" href="page-one.html" alt="Circle Region">
+        
+        <area shape="rect" coords="300,50,550,150" href="page-two.html" alt="Rectangle Region">
+        
+        <area shape="poly" coords="400,250,500,350,300,350" href="page-three.html" alt="Triangle Region">
+        
+        <area shape="default" href="default-page.html" alt="Default Area">
+    </map>
+
+</body>
+</html>

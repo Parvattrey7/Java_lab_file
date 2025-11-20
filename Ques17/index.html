@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatted Enrollment Table</title>
+    <style>
+        table {
+            width: 70%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        table {
+            border: 3px solid #007bff;
+        }
+        th, td {
+            border: 1px solid #ccc;
+        }
+
+        thead th {
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        tfoot td {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            color: #333;
+            border-top: 3px double #007bff;
+        }
+
+        .highlight-cell {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Semester Enrollment Report</h1>
+    <p>This report uses <code>rowspan</code> and <code>colspan</code> for summarizing data, and CSS for enhanced borders.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">Academic Year 2024-2025</th>
+            </tr>
+            <tr>
+                <th>Semester</th>
+                <th>Subject</th>
+                <th>Instructor</th>
+                <th>Students Enrolled</th>
+            </tr>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td rowspan="3" class="highlight-cell">1</td>
+                <td>CN</td>
+                <td>Dr. AG</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td>Prof. AM</td>
+                <td>40</td>
+            </tr>
+            <tr>
+                <td>NM</td>
+                <td>Mr. PA</td>
+                <td>55</td>
+            </tr>
+
+            <tr>
+                <td rowspan="2" class="highlight-cell">2</td>
+                <td>DBMS</td>
+                <td>Mrs. AK</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>DSA</td>
+                <td>Mrs. JT</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+        
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Students (All Subjects Listed)</td>
+                <td>190</td>
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+</html>
